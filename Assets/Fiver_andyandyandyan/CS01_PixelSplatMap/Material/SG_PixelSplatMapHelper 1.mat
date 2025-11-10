@@ -266,6 +266,10 @@ Material:
     - _TexWorldScale: 1
     - _TexWorldScaleEmissive: 1
     - _TextureMap01BlendStrength: 1
+    - _TextureMap01NoiseEdgeMax: 0.525
+    - _TextureMap01NoiseEdgeMin: 0.475
+    - _TextureMap01NoiseScale: 1
+    - _TextureSize: 64
     - _Thickness: 1
     - _TransmissionEnable: 1
     - _TransmissionMask: 1
