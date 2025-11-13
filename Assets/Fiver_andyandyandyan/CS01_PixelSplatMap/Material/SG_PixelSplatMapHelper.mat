@@ -27,14 +27,14 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: cae97a4caa2c84f1c9ede1d890905d3d, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords:
+  m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
+  m_InvalidKeywords:
   - _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: 2225
   stringTagMap:
     MotionVector: User
   disabledShaderPasses:
@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 15a9c9b06110b473c81475bb556c2ed0, type: 3}
+        m_Texture: {fileID: 2800000, guid: da031952c90f3469fa41696c449868d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -100,7 +100,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 6d2f4ad16332143029dbe0d68dfacda1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
@@ -124,7 +124,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureMap01:
-        m_Texture: {fileID: 2800000, guid: cb5e0651a977f4e3bb11decb6ab78fef, type: 3}
+        m_Texture: {fileID: 2800000, guid: 178d311a103e44a539a578503d1c66c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureMap02:
+        m_Texture: {fileID: 2800000, guid: 006a69ffade2c45ee9906301e3f7011b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureNormalMap01:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureNormalMap02:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ThicknessMap:
@@ -170,6 +182,7 @@ Material:
     - _Anisotropy: 0
     - _BaseMapTextureSize: 64
     - _BlendMode: 0
+    - _BlendOnMap01: 0
     - _BlendStrength01: 1
     - _Brightness: 2
     - _CoatMask: 0
@@ -223,9 +236,10 @@ Material:
     - _Min: 0.5
     - _NoiseEdgeMax: 0.525
     - _NoiseEdgeMin: 0.475
-    - _NoiseScale: 0.75
+    - _NoiseScale: 1
     - _NormalMapSpace: 0
     - _NormalScale: 1
+    - _NormalStrength: 1
     - _ObjectSpaceUVMapping: 0
     - _ObjectSpaceUVMappingEmissive: 0
     - _OpaqueCullMode: 2
@@ -250,15 +264,15 @@ Material:
     - _SpecularOcclusionMode: 1
     - _SrcBlend: 1
     - _StencilRef: 0
-    - _StencilRefDepth: 1
+    - _StencilRefDepth: 8
     - _StencilRefDistortionVec: 4
     - _StencilRefGBuffer: 10
-    - _StencilRefMV: 33
+    - _StencilRefMV: 40
     - _StencilWriteMask: 6
     - _StencilWriteMaskDepth: 9
     - _StencilWriteMaskDistortionVec: 4
     - _StencilWriteMaskGBuffer: 15
-    - _StencilWriteMaskMV: 43
+    - _StencilWriteMaskMV: 41
     - _StepCut: 0
     - _SubsurfaceMask: 1
     - _SupportDecals: 1
@@ -266,6 +280,16 @@ Material:
     - _TexWorldScale: 1
     - _TexWorldScaleEmissive: 1
     - _TextureMap01BlendStrength: 1
+    - _TextureMap01NoiseEdgeMax: 0.525
+    - _TextureMap01NoiseEdgeMin: 0.475
+    - _TextureMap01NoiseScale: 1
+    - _TextureMap02BlendStrengt: 1
+    - _TextureMap02NoiseEdgeMax: 0.525
+    - _TextureMap02NoiseEdgeMin: 0.475
+    - _TextureMap02NoiseScale: 1
+    - _TextureNormalMap01Strength: 0
+    - _TextureNormalMap02Strength: 0
+    - _TextureSize: 48
     - _Thickness: 1
     - _TransmissionEnable: 1
     - _TransmissionMask: 1
@@ -297,6 +321,7 @@ Material:
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TextureMap01NoiseOffset: {r: 0, g: 0, b: 0, a: 0}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
